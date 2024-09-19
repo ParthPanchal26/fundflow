@@ -20,31 +20,31 @@ const Organization = () => {
         <section className="orgInfoContainer">
 
           <div className="orgLogoContainer">
-            <img src="https://www.shutterstock.com/image-photo/org-text-on-wood-cubes-260nw-1911771148.jpg" alt="" className="orgLogo" />
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTsHLm2vHIdlaXVg20CzYz970OxiII6qgZkhg&s" alt="" className="orgLogo" />
           </div>
 
-          <div className="orgFields orgFieldsUnderline orgName">Name: <span className="bold">InnoVentures</span></div>
-          <div className="orgFields orgFieldsUnderline orgIndustry">Industry: <span className="bold">Technology & innovation Consulting</span></div>
+          <div className="orgFields orgFieldsUnderline orgName">Name: <span className="bold">eInfoChips</span></div>
+          <div className="orgFields orgFieldsUnderline orgIndustry">Industry: <span className="bold">Blockchain</span></div>
           <div className="orgFields orgFieldsUnderline orgLoc">Location: <span className="bold">Bengaluru, India</span></div>
-          <div className="orgFields orgFieldsUnderline orgEmail">Email: <span className="bold">contact@innoventures.tech</span></div>
+          <div className="orgFields orgFieldsUnderline orgEmail">Email: <span className="bold">contact@einfochips.tech</span></div>
           <div className="orgFields orgFieldsUnderline orgMedia">Social media: <br />
-            LinkedIn: <span className='links bold'>linkedin.com/comapany/innoventures</span>
+            LinkedIn: <span className='links bold'>linkedin.com/comapany/einfochips</span>
             <br />
-            Twitter: <span className='links bold'>twitter.com/innoventures</span>
+            Twitter: <span className='links bold'>twitter.com/einfochips</span>
           </div>
           <div className="orgFields orgFieldsUnderline orgMedia">
-            Website: <span className="links bold">www.innoventures.tech</span>
+            Website: <span className="links bold">www.einfochips.tech</span>
           </div>
 
         </section>
 
         <section className="rightSection">
           <div className="orgLogoContainer rightHeading">Problem Statements</div>
-          <div className="orgFields problemBox">1. Smart Agriculture Solution</div>
-          <div className="orgFields problemBox">2. Sustainable Urban Mobility</div>
-          <div className="orgFields problemBox">3. Remote Healthcare Access</div>
-          <div className="orgFields problemBox">4. Blockchain for Transparent Supply Chain</div>
-          <div className="orgFields problemBox">5. AI-Driven Education Platform</div>
+          <div className="orgFields problemBox">1. Blockchain Based Data Privacy For Healthcare</div>
+          <div className="orgFields problemBox">2. Decentralized Identity Management</div>
+          <div className="orgFields problemBox">3. Supply Chain Transparency with Blockchain</div>
+          <div className="orgFields problemBox">4. Smart Contract-Based Legel Automation</div>
+          <div className="orgFields problemBox">5. Blockchain-Based Voting System</div>
           <button className="orgFields problemBox" onClick={showPopUp}>Approach Organization</button>
         </section>
 
