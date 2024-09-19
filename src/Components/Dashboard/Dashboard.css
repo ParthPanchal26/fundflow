@@ -1,0 +1,302 @@
+body {
+  margin: 0;
+  overflow-x: hidden; /* Prevent horizontal scrollbar */
+}
+
+.bodyContainer {
+  display: flex;
+  flex-direction: column;
+  background-color: #181C14; /* Background color for the container */
+  padding: 2rem;
+  min-height: 100vh;
+  position: relative; /* For positioning header elements */
+  box-sizing: border-box; /* Ensure padding is included in width/height calculations */
+}
+
+/* Header Styling */
+.header {
+  display: flex;
+  justify-content: flex-start; /* Align items to the start (left) */
+  padding: 1rem;
+  position: absolute; /* To place it at the top corner */
+  top: 0;
+  left: 0;
+  width: 100%;
+  box-sizing: border-box; /* Ensure padding is included in width/height calculations */
+  background-color: transparent; /* Ensure background is transparent to avoid overlap */
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between; /* Space out hamburger and buttons */
+  align-items: center;
+  width: 100%;
+  padding: 0 1rem;
+  box-sizing: border-box; /* Ensure padding is included in width/height calculations */
+}
+
+.hamburger {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+}
+
+.bar {
+  background-color: #ffffff;
+  height: 3px;
+  width: 25px;
+  margin: 3px 0;
+  border-radius: 2px;
+}
+
+/* Sidebar Styling */
+
+
+/* Authentication Section */
+.authSection {
+  padding: 2rem;
+  margin: 1.5rem 2rem;
+  box-sizing: border-box; /* Ensure padding is included in width/height calculations */
+}
+
+/* Links Alignment */
+.authLinks {
+  display: flex;
+  justify-content: flex-end;
+  position: absolute; /* Position the buttons in the top right corner */
+  top: 1rem;
+  right: 1rem;
+  width: auto;
+  box-sizing: border-box; /* Ensure padding is included in width/height calculations */
+}
+
+/* Button Styling */
+.linkbtn {
+  font-weight: 600;
+  font-size: 18px;
+  border-radius: 30px;
+  padding: 12px 50px;
+  background-color: #697565;
+  border: none;
+  color: #fff;
+  margin-left: 1rem;
+  cursor: pointer;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease-in-out;
+}
+
+.linkbtn:hover {
+  background-color: #218838;
+  box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* Information Cards Section */
+.infoCards {
+  margin: 2rem;
+  box-sizing: border-box; /* Ensure margin does not cause overflow */
+}
+
+.infoCardSection {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap; /* Allow wrapping if needed */
+}
+
+/* Featured Boxes */
+.featuredBoxes {
+  background-color: #3C3D37; /* Primary card background color */
+  width: 220px;
+  height: 150px;
+  margin: 1rem;
+  padding: 3rem;
+  font-size: 16px;
+  font-weight: 700;
+  text-align: center;
+  color: #fff;
+  border-radius: 20px;
+  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.15);
+  transition: all 0.3s ease-in-out;
+}
+
+.featuredBoxes:hover {
+  background-color: #138496;
+  box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+/* Developer Boxes Section */
+.topDevs {
+  margin: 2rem;
+}
+
+.headingBox {
+  text-align: center;
+  font-weight: 700;
+  font-size: 22px;
+  color: #ffffff; /* Matches the background */
+}
+
+.boxes {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap; /* Allow wrapping if needed */
+}
+
+.devBoxes {
+  background-color: #688c90; /* Neutral card color for devs */
+  width: 300px; /* Adjusted width */
+  margin: 1rem;
+  border-radius: 25px;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease-in-out;
+}
+
+.devBoxes:hover {
+  box-shadow: 0px 12px 20px rgba(0, 0, 0, 0.2);
+}
+
+.devList {
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Fields Styling */
+.fields {
+  list-style: none;
+  font-size: 16px;
+  padding: 0.5rem;
+}
+
+.picBox {
+  text-align: center;
+}
+
+.pic {
+  height: 120px;
+  width: 120px;
+  border-radius: 50%;
+  border: 3px solid #dedede;
+}
+
+body {
+  --sb-track-color: #232E33;
+  --sb-thumb-color: #6BAF8D;
+  --sb-size: 14px;
+}
+
+body::-webkit-scrollbar {
+  width: var(--sb-size);
+}
+
+body::-webkit-scrollbar-track {
+  background: var(--sb-track-color);
+  border-radius: 3px;
+}
+
+body::-webkit-scrollbar-thumb {
+  background: var(--sb-thumb-color);
+  border-radius: 3px;
+}
+
+@supports not selector(::-webkit-scrollbar) {
+  body {
+    scrollbar-color: var(--sb-thumb-color) var(--sb-track-color);
+  }
+}
+/* Sidebar Styling */
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 350px; /* Increased width for a larger sidebar */
+  height: 100%;
+  background-color: #333; /* Darker background for contrast */
+  color: #fff;
+  padding: 2rem; /* More padding for a spacious feel */
+  box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.5); /* Enhanced shadow for depth */
+  transition: transform 0.4s ease-in-out; /* Smooth transition for sliding in and out */
+  transform: translateX(-100%); /* Hide sidebar off-screen */
+  z-index: 1000; /* Ensure it's on top of other elements */
+  display: flex;
+  flex-direction: column; /* Stack items vertically */
+}
+
+.sidebar.open {
+  transform: translateX(0); /* Slide sidebar in */
+  width: 350px;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  flex: 1; /* Take up available space, pushing Logout to bottom */
+}
+
+.sidebar li {
+  margin: 1.5rem 0; /* More spacing between items */
+}
+
+.sidebar a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 20px; /* Increased font size for readability */
+  display: block;
+ /* Larger padding for consistency */
+  border-radius: 8px; /* Rounded corners for a softer look */
+  transition: background-color 0.3s ease-in-out;
+}
+
+.sidebar a:hover {
+  background-color: #555;
+}
+
+/* Logout Button Styling */
+.logoutButton {
+  margin-top: auto; /* Pushes the button to the bottom */
+  background-color: #e74c3c; /* Distinct color for logout */
+  border: none;
+  padding: 15px 25px; /* Larger padding for consistency */
+  font-size: 20px; /* Larger font size */
+  color: #fff;
+  border-radius: 8px; /* Rounded corners */
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.logoutButton:hover {
+  background-color: #c0392b; /* Darker shade for hover effect */
+}
+
+/* Sidebar Animation */
+@keyframes slideIn {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideOut {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+/* Apply animations when the sidebar is opened or closed */
+.sidebar.open {
+  animation: slideIn 0.4s ease-in-out forwards; /* Slide in animation */
+}
+
+.sidebar {
+  animation: slideOut 0.4s ease-in-out forwards; /* Slide out animation */
+}
